@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(231, 176, 176); 
+            position: relative;           
+        }
+
+        .large-box{
+            background-color: rgb(49, 88, 103);
+            width: 600px;
+            height: 600px;
+            border-radius: 30px;
+            position: relative;
+        }
+        .small-box1{
+            background-color: rgb(104, 155, 213);
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        .small-box2{
+            background-color: rgb(104, 155, 213);
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        } 
+        .p_parent {
+            background-color: rgb(49, 88, 103);
+            position: absolute;
+            right:200px;
+            top: 250px;
+            font-size: 40px;
+
+        }
+
+        .p_child1{
+            background-color: rgb(104, 155, 213);
+            position: absolute;
+            left: 35px;
+            top: 70px;
+            font-size: 20px;
+        }
+
+        .p_child2{
+            background-color: rgb(104, 155, 213);
+            position: absolute;
+            right: 35px;
+            top: 70px;
+            font-size: 20px;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <div class="large-box">
+            <p class = "p_parent">Hinh khoi lon</p>
+            <div class="small-box1">
+                <p class = "p_child1">Hinh khoi nho 1</p>
+            </div>
+            <div class="small-box2">
+                <p class = "p_child2">Hinh khoi nho 2</p>
+            </div>
+        </div>
+    </body>
+</html>

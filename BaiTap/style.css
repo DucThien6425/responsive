@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+}
+.đỏ{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+.vàng{
+    position: absolute;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 230px;
+}
+
+.xanh{
+    position: absolute;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    right: 200px;
+}

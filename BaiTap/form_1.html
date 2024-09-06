@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: linear-gradient(45deg, #072f57, #17e26f);
+            padding: 20px 40px;
+            border-radius: 10px;
+            
+        }
+
+        .title {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+
+        .input-container {
+            position: relative;
+            margin-bottom: 22px;
+        }
+
+        .input-container .icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%); /* phần tử sẽ di chuyển lên trên 50% chiều cao của chính nó so với vị trí ban đầu.*/
+            color: white;
+        }
+
+        .input-container input {
+            width: 80%;
+            padding: 10px 10px 10px 35px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none; /* Xóa các đường hằn của input khi chúng ta nhập */
+            color: white;
+            font-size: 14px;
+        }
+
+        .input-container textarea {
+            width: 80%;
+            padding: 10px 10px 10px 35px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none; 
+            color: white;
+            font-size: 14px;
+        }
+        .input-container textarea::placeholder {
+            padding-top: 10px;
+            color: rgba(255, 255, 255, 0.837);
+        }
+        
+
+        .input-container input::placeholder {
+            color:  rgba(255, 255, 255, 0.837);
+        }
+
+        button {
+            width: 20%;
+            padding: 10px;
+            background-color: #072f57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 20px;
+            margin-left: 160px;
+        }
+
+        button:hover {
+            background-color: #17e26f;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h3>Gửi mail đến Phòng Kinh Doanh</h3>
+        </div>
+        <form action="">
+            <div class="input">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input class="user" type="text" placeholder="Họ tên *">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-container">
+                                <i class="fa fa-phone icon"></i>
+                                <input class="phone-number" type="text" placeholder="Di động *">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="input-container">
+                                <i class="fa fa-envelope icon"></i>
+                                <input class="email" type="text" placeholder="Email">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="input-container">
+                                <i class="fa-solid fa-tag icon"></i>
+                                <input class="email-title" type="text" placeholder="Tiêu đề email">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="input-container">
+                                <i class="fa-regular fa-comment icon"></i>
+                                <textarea class="email-content" placeholder="Nội dung email..." ></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Gửi Đi</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

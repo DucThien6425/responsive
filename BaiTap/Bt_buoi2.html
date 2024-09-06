@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pink Cloud</title>
+
+    <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: cornsilk;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 250px 100px 50px 50px 50px;
+            gap: 10px;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .item{
+            border: 1px solid gray;
+            min-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            
+        }
+
+
+        .item-1 {
+            grid-column-start: 1;
+            grid-column-end: 2 ;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+            
+        }
+
+        .item-2 {
+            grid-column-start: 1;
+            grid-column-end: 2 ;
+
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .item-3 {
+            grid-column-start: 2;
+            grid-column-end: 4 ;
+
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .item-4 {
+            grid-column-start: 1;
+            grid-column-end: 2 ;
+
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        .item-5 {
+            grid-column-start: 2;
+            grid-column-end: 4 ;
+
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+        .layout-image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;  /* để cho ảnh ko bị méo */
+        }
+        
+        p{
+            position: absolute;
+            color: rgb(111, 112, 112);
+        }
+
+    </style>
+</head>
+<body>
+    <Div class = "container">
+        <div class="item-1 item">  
+            <img src="https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?cs=srgb&dl=pexels-eberhardgross-844297.jpg&fm=jpg" class="layout-image">
+            <p>Pink cloud</p>
+        </div>
+        <div class="item-2 item">
+            <img src="https://i.pinimg.com/736x/a9/ed/ec/a9edec96564e55781c3099d0906bf84f.jpg" class="layout-image">
+            <p>Pink sky</p>
+        </div>
+        <div class="item-3 item">
+            <img src="https://wallpapercave.com/wp/wp6241485.jpg" class="layout-image">
+            <p>Beautiful cloud</p>
+        </div>
+        <div class="item-4 item">
+            <img src="https://i.pinimg.com/736x/73/44/f9/7344f952b5f929d2b92e8ebc661d1219.jpg" class="layout-image">
+            <p>sky high</p>
+        </div>
+        <div class="item-5 item">
+            <img src="https://i.pinimg.com/736x/1c/ed/80/1ced8072e56ee269aff7d8580a111853.jpg" class="layout-image">
+            <p>Beautiful pink</p>
+        </div>
+    </Div>
+</body>
+</html>
